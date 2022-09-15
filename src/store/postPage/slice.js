@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const postPageSliceReducer = createSlice({
-  name: "postPage",
+  name: "postPages",
   initialState,
   reducers: {
     startLoadingPost: (state) => {

@@ -16,7 +16,7 @@ export default function Homepage() {
   const posts = useSelector(selectFeedPosts);
 
   useEffect(() => {
-    dispatch(fetchPosts);
+    if (!posts.length) dispatch(fetchPosts);
   }, [dispatch]);
 
   return (
